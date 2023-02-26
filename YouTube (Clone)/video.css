@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 8px;
-    row-gap: 16px;
+    row-gap: 12px;
     padding-top: 0px;
-}
+    }
 
 @media (max-width: 750px) {
     .video-grid {
