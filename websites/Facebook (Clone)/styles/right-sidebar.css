@@ -1,0 +1,30 @@
+/* RIGHT SIDE BAR */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #050505;
+
+    flex-basis: 360px;
+    flex-shrink: 9999;
+    max-height: 0px;
+    max-width: 360px;
+    min-height: 871px;
+    min-width: 280px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 700px;
+
+    top: 56px;
+
+    z-index: 50;
+
+    font-family: Open Sans;
+}
+
+.left-sidebar-content{
+    margin-top: 16px;
+}

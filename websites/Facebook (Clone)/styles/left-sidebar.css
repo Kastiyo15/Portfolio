@@ -1,0 +1,107 @@
+/* LEFT SIDE BAR */
+.left-side-bar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #050505;
+
+    flex-basis: 360px;
+    flex-shrink: 9999;
+    max-height: 0px;
+    max-width: 360px;
+    min-height: 871px;
+    min-width: 280px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 700px;
+
+    top: 56px;
+
+    z-index: 50;
+
+    font-family: Open Sans;
+}
+
+.left-sidebar-content{
+    margin-top: 16px;
+}
+
+.left-side-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.left-side-bar-shortcuts-container,
+.left-side-bar-row-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    background-color: transparent;
+    border-radius: 5px;
+    max-width: 360px;
+    height: 52px;
+
+    padding: 0 8px;
+}
+
+.left-side-bar-row-container {
+    cursor: pointer;
+}
+
+.left-side-bar-row-container:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.left-side-bar-row-container:active {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.see-more-button,
+.left-side-bar-profile-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.see-more-button {
+    background-color: rgb(228, 230, 235);
+}
+
+.left-side-bar-row-container:hover .see-more-button {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.see-more-icon {
+    height: 20px;
+}
+
+.left-side-bar-image-container {
+    margin: 8px 12px 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-side-bar-image-container .shortcuts-image {
+    border-radius: 4px;
+}
+
+.left-side-bar-row-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 280px;
+}
+
+.left-side-bar-shortcuts-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(101, 103, 107);
+}
