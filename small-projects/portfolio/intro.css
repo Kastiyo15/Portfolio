@@ -1,0 +1,36 @@
+
+.intro-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  top: -70px;
+  font-size: 2rem;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+}
+
+.intro-text-container span {
+  font-weight: bold;
+  color: var(--darker-accent);
+}
+
+.intro-first-line {
+  font-size: 3rem;
+}
+
+.intro-second-line {
+  font-size: 1.3rem
+}
+
+.intro-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+

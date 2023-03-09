@@ -1,0 +1,45 @@
+.about-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  user-select: none;
+  color: white;
+  top: -70px;
+  padding: 0 8vw;
+  font-weight: bold;
+}
+
+.about-container div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-image-container{
+  flex: 1;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 2rem auto;
+}
+
+.about-me-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-text {
+  flex: 2;
+  height: 80vh;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: normal;
+}

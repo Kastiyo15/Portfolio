@@ -1,0 +1,76 @@
+:root {
+  --background-white: rgb(255, 254, 250);
+  --light-grey: rgb(223, 223, 223);
+  --dark-grey: rgb(75, 75, 75);
+
+  --background: #FFF4EB;
+  --light-orange: #FFDAB9;
+  --apricot: #FBC4AB;
+  --melon: #F8AD9D;
+  --coral-pink: #F4978E;
+  --light-coral: #F08080;
+
+  --heading-height: 70px;
+
+  --darker-accent: #17252A;
+  --dark-accent: #2B7A78;
+  --background-color: #3AAFA9;
+  --light-accent: #DEF2F1;
+  --lighter-accent: #FEFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Montserrat;
+}
+
+html {
+  scroll-padding-top: var(--heading-height);
+  overflow: hidden;
+}
+
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+
+  font-size: 16px;
+  padding-bottom: 1000px;
+  background-color: var(--background);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.buttons {
+  color: white;
+  font-size: 1rem;
+  background-color: var(--darker-accent);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem;
+
+  cursor: pointer;
+
+  transition: ease all 0.2s;
+}
+
+.intro-contact-button {
+  font-size: 1.2rem;
+}
+
+.buttons:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}

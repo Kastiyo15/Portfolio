@@ -5,43 +5,162 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+
 	<title>Small Projects Portfolio</title>
 
+	<link rel="stylesheet" href="projects.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="intro.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="general.css">
 	<link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
 	<header>
-		<div class="title"><a href="index.html">Portfolio</a></div>
+		<div class="left-section"><a class="title" href="#landing-page">MAX BEDFORD</a></div>
+		<nav class="right-section">
+			<ul>
+				<li><a href="#landing-page">Home</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main>
-		<div class="list-title">Small Projects List</div>
+		<div class="container intro-page" id="landing-page">
+			<section>
+				<div class="intro-text-container">
+					<div class="intro-first-line">Hi, I'm <span>Max</span></div>
+					<div class="intro-second-line">I'm a front end developer.</div>
+					<div class="intro-button-container">
+						<a href="#contact">
+							<button class="intro-contact-button buttons">Contact Me</button>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
 
-		<nav class="project-list">
-			<ul>
-				<li class="project">
-					<a href="projects/Calculator/index.html" target="_blank">
-						<img class="project-image" src="images/calculator.png">
-						<div class="text-container">
-							<div class="project-title">Calculator</div>
-							<div class="project-description">A simple calculator designed and created by following a YouTube tutorial</div>
-						</div>
-					</a>
-				</li>
+		<div class="container" id="projects">
+			<section>
+				<div class="list-title">My Recent Projects</div>
 
-				<li class="project">
-					<a href="projects/Stopwatch/index.html" target="_blank">
-						<img class="project-image" src="images/stopwatch.png">
-						<div class="text-container">
-							<div class="project-title">Stopwatch</div>
-							<div class="project-description">A simple stopwatch designed and created by following a YouTube tutorial A simple stopwatch designed and created by following a YouTube tutorial A simple stopwatch designed and created by following a YouTube tutorial A simple stopwatch designed and created by following a YouTube tutorial</div>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</nav>
+				<nav class="project-list-container">
+					<ul class="project-list">
+						<li class="project">
+							<a class="project-link" href="projects/Calculator/index.html" target="_blank">
+								<img class="project-image" src="images/calculator.png">
+								<div class="text-container">
+									<div class="project-title">Calculator</div>
+									<div class="project-description">A simple calculator designed and created by following a YouTube
+										tutorial
+									</div>
+								</div>
+							</a>
+							<a href="https://github.com/Kastiyo15/Portfolio/tree/main/small-projects/portfolio/projects/Calculator"
+								class="project-github-link" target="_blank"><button class="project-github-button">GitHub
+									Code</button></a>
+						</li>
+
+						<li class="project">
+							<a class="project-link" href="projects/Stopwatch/index.html" target="_blank">
+								<img class="project-image" src="images/stopwatch.png">
+								<div class="text-container">
+									<div class="project-title">Stopwatch</div>
+									<div class="project-description">A simple stopwatch designed and created by following a YouTube
+										tutorial.A
+										simple stopwatch designed and created by following a YouTube tutorial.A simple stopwatch designed
+										and
+										created by following a YouTube tutorial.A simple stopwatch designed and created by following a
+										YouTube
+										tutorial.A simple stopwatch designed and created by following a YouTube tutorial.</div>
+								</div>
+							</a>
+							<a href="https://github.com/Kastiyo15/Portfolio/tree/main/small-projects/portfolio/projects/Stopwatch"
+								class="project-github-link" target="_blank"><button class="project-github-button">GitHub
+									Code</button></a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
+
+		<div class="container" id="about">
+			<section>
+				<div class="list-title">About Me</div>
+
+				<div class="about-container">
+					<div class="about-me-image-container"><img class="about-me-image" src="images/profile.png"></div>
+					<div class="about-text">Hello! My name is Max Bedford, a web designer and developer from Brighton, England.
+						I love to use HTML, CSS and JavaScript to focus on creating responsive designs.</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="container" id="contact">
+			<section class="contact-section">
+				<div class="list-title">Get in Touch</div>
+
+				<div class="contact-description">If you’d like to chat about a project or just have question, please fill in the
+					form below. I aim to get back within 2 days.</div>
+
+				<div class="contact-container">
+					<div class="contact-message-container">
+						<form action="index.php" name="contactform" method="POST">
+							<div class="contact-message-row1">
+								<div class="input-field">
+									<div class="input-heading">Full Name<span>*</span></div>
+									<input class="contact-input name-field" type="text" placeholder="Name" minlength="2" maxlength="60"
+										autocomplete="off" required>
+								</div>
+								<div class="input-field">
+									<div class="input-heading">Email<span>*</span></div>
+									<input class="contact-input" type="email" minlength="5" maxlength="60" placeholder="Email Address"
+										autocomplete="off" required>
+								</div>
+							</div>
+							<div class="contact-message-row2">
+								<div class="input-field">
+									<div class="input-heading">Message<span>*</span></div>
+									<textarea class="contact-input" name="message" placeholder="Message" rows="5" cols="30" minlength="10"
+										maxlength="500" required></textarea>
+								</div>
+
+							</div>
+							<div class="contact-message-row3">
+								<input class="buttons" type="submit" value="Submit" name="submit">
+								<input class="buttons" type="reset" value="Clear" name="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+				<footer>
+					<nav class="footer-links">
+						<ul>
+							<li><a href="https://www.linkedin.com/in/max-bedford-9583051ba/?originalSubdomain=uk"
+									type="_blank">LinkedIn</a></li>
+							<li><a href="https://github.com/Kastiyo15" type="_blank">GitHub</a></li>
+						</ul>
+					</nav>
+				</footer>
+			</section>
+		</div>
+
 	</main>
+
+
+
 </body>
 
 </html>
