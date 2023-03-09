@@ -1,0 +1,77 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  background-color: $dark;
+  color: white;
+  user-select: none;
+}
+
+body {
+  @include flex-column;
+  height: 100vh;
+}
+
+.counter-container {
+  @include flex-column;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: $darker;
+  width: 400px;
+
+  div {
+    font-size: 3rem;
+  }
+}
+
+.counter {
+  @include flex-row;
+  background-color: white;
+  color: black;
+  width: 23rem;
+  height: 6rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.buttons-container {
+  position: relative;
+  background: none;
+  width: 23rem;
+}
+
+.buttons {
+  @include flex-row;
+  background: none;
+  justify-content: space-between;
+
+  button {
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+
+    transition: ease all 0.15s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      background-color: $darker;
+      top: 0.25rem;
+    }
+  }
+}
