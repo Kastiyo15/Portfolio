@@ -117,16 +117,16 @@
 
 				<div class="contact-container">
 					<div class="contact-message-container">
-						<form action="index.php" name="contactform" method="POST">
+						<form action="form-contoller.php" id="contact-form" method="post">
 							<div class="contact-message-row1">
 								<div class="input-field">
 									<div class="input-heading">Full Name<span>*</span></div>
-									<input class="contact-input name-field" type="text" placeholder="Name" minlength="2" maxlength="60"
+									<input class="contact-input name-field" name="name" type="text" placeholder="Name" minlength="2" maxlength="60"
 										autocomplete="off" required>
 								</div>
 								<div class="input-field">
 									<div class="input-heading">Email<span>*</span></div>
-									<input class="contact-input" type="email" minlength="5" maxlength="60" placeholder="Email Address"
+									<input class="contact-input" name="email" type="email" minlength="5" maxlength="60" placeholder="Email Address"
 										autocomplete="off" required>
 								</div>
 							</div>
