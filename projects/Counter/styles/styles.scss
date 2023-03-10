@@ -12,12 +12,12 @@
 }
 
 body {
-  @include flex-column;
+  @include flexCenter(column);
   height: 100vh;
 }
 
 .counter-container {
-  @include flex-column;
+  @include flexCenter(column);
   position: relative;
   padding: 1rem;
   border-radius: 1rem;
@@ -30,7 +30,7 @@ body {
 }
 
 .counter {
-  @include flex-row;
+  @include flexCenter(column);
   background-color: white;
   color: black;
   width: 23rem;
@@ -47,7 +47,7 @@ body {
 }
 
 .buttons {
-  @include flex-row;
+  @include flexCenter(row);
   background: none;
   justify-content: space-between;
 
