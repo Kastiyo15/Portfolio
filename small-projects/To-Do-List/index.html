@@ -1,0 +1,106 @@
+<!-- https://www.youtube.com/watch?v=6eFwtaZf6zc&t=84s -->
+<!-- Tyler Potts Tutorial -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>To Do List</title>
+</head>
+
+<body>
+  <main class="app">
+
+    <section class="greeting">
+      <h2 class="title">
+        Welcome, <input type="text" id="name" placeholder="Name Here">
+      </h2>
+    </section>
+
+    <section class="create-todo">
+      <h3>CREATE A TODO</h3>
+
+      <form id="new-todo-form">
+        <h4>What's on your todo list?</h4>
+        <input class="create-todo" id="create-todo" type="text" name="content" placeholder="e.g. Buy some chocolate" />
+
+        <h4>Pick a category</h4>
+        <div class="options">
+
+          <label>
+            <input type="radio" name="category" id="category1" value="business" />
+            <span class="bubble business"></span>
+            <div>Business</div>
+          </label>
+
+          <label>
+            <input type="radio" name="category" id="category2" value="personal" />
+            <span class="bubble personal"></span>
+            <div>Personal</div>
+          </label>
+
+        </div>
+
+        <input type="submit" value="Add todo">
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <div class="todo-header">
+        <h3 class="list-title">TODO LIST</h3>
+        <h3 id="complete-filter">Completed: <span class="complete" id="complete">6</span></h3>
+        <h3 id="total-filter">Total: <span class="total" id="total">6</span></h3>
+        <h3 id="incomplete-filter">Incomplete: <span class="incomplete" id="incomplete">6</span></h3>
+      </div>
+      <div class="list" id="todo-list">
+<!--         <div class="todo-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble business"></span>
+          </label>
+
+          <div class="todo-content">
+            <input type="text" value="Buy some chocolate" readonly />
+          </div>
+
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="todo-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble business"></span>
+          </label>
+
+          <div class="todo-content">
+            <input type="text" value="Get some milk" readonly />
+          </div>
+
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
