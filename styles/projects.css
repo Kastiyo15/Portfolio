@@ -65,7 +65,7 @@
 }
 
 .project-link:hover {
-  background: linear-gradient(90deg, var(--darker-accent) 0%, var(--dark-accent) 75%, var(--background-color) 100%);
+  background: var(--darker-accent);
   color: white;
 }
 
@@ -149,7 +149,7 @@
 
 .project-github-button {
   border: none;
-  background-color: var(--darker-accent);
+  background-color: var(--light-coral);
   color: white;
   height: 100%;
   padding: 0.25rem;
